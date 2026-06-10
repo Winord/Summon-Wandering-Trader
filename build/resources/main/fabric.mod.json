@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "wanderingtradertests",
+  "version": "2.0.0",
+
+  "name": "Summon Wandering Trader",
+  "description": "This mod adds a command to test wandering trader spawning",
+  "authors": [
+    "slicedlime, Winord"
+  ],
+
+  "license": "GPLv3",
+  "icon": "assets/wanderingtradertests/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tv.slicedlime.tradertest.WanderingTraderTestMod"
+    ]
+  },
+  "mixins": [
+    "wanderingtradertests.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": ">=26.1",
+    "java": ">=25"
+  }
+}
